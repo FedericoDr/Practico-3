@@ -1,0 +1,54 @@
+*{
+    padding: 0;
+    margin: 0;
+    background: #cee1d8;
+}
+
+.carrusel {
+    display: flex;
+    position: relative;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.image {
+    width: 1000px;
+    height: 600px;
+    border-radius: 12px;
+}
+
+
+.Flecha_Der{
+    position: absolute;
+    top: 50%;
+    right: 32px;
+    font-size: 3rem;
+    color: rgba(0, 0, 0, 0.986);
+    z-index: 10;
+    cursor: pointer;
+    user-select: none;
+}
+
+.Fecha_Izq{
+    position: absolute;
+    top: 50%;
+    left: 32px;
+    font-size: 3rem;
+    color: rgb(0, 0, 0);
+    z-index: 10;
+    cursor: pointer;
+    user-select: none;
+}
+
+.slide {
+    opacity: 0,5;
+    transition-duration: 1s ease;
+}
+
+.slide.activo{
+    opacity: 2;
+    transition-duration: 0.50s;
+    transform: scale(1.08);
+}
+
